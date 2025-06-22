@@ -1,0 +1,118 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Фоновые изображения */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide1{
+    background-image: url(../img/2148425613.jpg);
+}
+.slide2{
+    background-image: url(../img/10911.jpg);
+}
+
+.slide3{
+    background-image: url(../img/2148834031.jpg);
+}
+
+
+/* Контейнер с текстом поверх */
+.hero-info {
+    position: relative;
+    z-index: 1;
+    padding-top: 250px;
+    padding-left: 200px;
+    width: 800px;
+    color: white;
+}
+
+.hero-info .hero-greeting {
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.hero-info .hero-greeting::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: yellow;
+    border-radius: 10px;
+    position: relative;
+    top: 16px;
+    left: -50px;
+}
+
+.hero-info h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.hero-info .hero-subtitle {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-info a {
+    display: block;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    font-weight: 400;
+    height: 60px;
+    width: 180px;
+    padding: 20px 40px;
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+.hero-info a:hover {
+    border-radius: 30px;
+    padding: 20px 40px;
+    border: 0;
+    transition: border-radius 0.4s ease, background-color 0.4s ease;
+}
+
+/* Навигационные точки */
+.circle {
+    display: flex;
+    position: relative;
+    left: -110px;
+    height: 20px;
+    width: 95px;
+    top: 135px;
+    gap: 15px;
+    z-index: 2; /* поверх фона */
+}
+
+.circle svg {
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+    stroke: white;
+    transition: stroke 1s ease;
+}
+
+.circle svg.active {
+    stroke: orange;
+}
