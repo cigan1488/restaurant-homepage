@@ -1,135 +1,82 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Сравнение шрифтов</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&family=EB+Garamond&family=Lora&family=Poppins&family=Montserrat&family=Rubik&family=Raleway&family=Open+Sans&family=Roboto&family=Great+Vibes&family=Dancing+Script&family=Pacifico&family=Oswald&family=Merriweather&family=Inter&family=Fira+Sans&family=Nunito&family=Quicksand&family=Cabin&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Typography Example</title>
+
+  <!-- Подключение Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+
   <style>
+    /* Основные стили */
     body {
-      background: #f9f9f9;
-      padding: 2rem;
-      font-family: sans-serif;
-    }
-    .font-block {
-      background: white;
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .font-title {
-      font-size: 20px;
+      margin: 0;
+      padding: 40px;
+      background: #fff8f0;
       color: #333;
-      margin-bottom: 0.5rem;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
     }
-    .font-sample {
-      font-size: 24px;
-      color: #111;
+
+    h1, h2, h3 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 0.5em;
+      color: #4a2f27;
+    }
+
+    a {
+      font-family: 'Source Sans Pro', sans-serif;
+      text-decoration: none;
+      color: #d35400;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #e67e22;
+    }
+
+    nav {
+      background: #fff3e0;
+      padding: 15px 25px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Сравнение шрифтов для сайта ресторана</h1>
-  
-  <div class="font-block" style="font-family: 'Playfair Display', serif;">
-    <div class="font-title">Playfair Display</div>
-    <div class="font-sample">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus eum nulla architecto quasi, earum asperiores. Vitae iure doloremque laboriosam voluptatibus sapiente vero dicta, eaque amet quidem eos itaque qui..</div>
-  </div>
 
-  <div class="font-block" style="font-family: 'Cormorant Garamond', serif;">
-    <div class="font-title">Cormorant Garamond</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+    <a href="#">Reservation</a>
+  </nav>
 
-  <div class="font-block" style="font-family: 'EB Garamond', serif;">
-    <div class="font-title">EB Garamond</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
+  <div class="content">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>
+      Discover a dining experience like no other. At our restaurant, we believe in combining classic
+      flavors with modern presentation. From locally sourced ingredients to expert chefs, we bring
+      the very best to your table.
+    </p>
 
-  <div class="font-block" style="font-family: 'Lora', serif;">
-    <div class="font-title">Lora</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Poppins', sans-serif;">
-    <div class="font-title">Poppins</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Montserrat', sans-serif;">
-    <div class="font-title">Montserrat</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Rubik', sans-serif;">
-    <div class="font-title">Rubik</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Raleway', sans-serif;">
-    <div class="font-title">Raleway</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Open Sans', sans-serif;">
-    <div class="font-title">Open Sans</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Roboto', sans-serif;">
-    <div class="font-title">Roboto</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Great Vibes', cursive;">
-    <div class="font-title">Great Vibes</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Dancing Script', cursive;">
-    <div class="font-title">Dancing Script</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Pacifico', cursive;">
-    <div class="font-title">Pacifico</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Oswald', sans-serif;">
-    <div class="font-title">Oswald</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Merriweather', serif;">
-    <div class="font-title">Merriweather</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Inter', sans-serif;">
-    <div class="font-title">Inter</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Fira Sans', sans-serif;">
-    <div class="font-title">Fira Sans</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Nunito', sans-serif;">
-    <div class="font-title">Nunito</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Quicksand', sans-serif;">
-    <div class="font-title">Quicksand</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
-  </div>
-
-  <div class="font-block" style="font-family: 'Cabin', sans-serif;">
-    <div class="font-title">Cabin</div>
-    <div class="font-sample">Добро пожаловать в наш ресторан! Попробуйте изысканные блюда от шеф-повара в уютной атмосфере.</div>
+    <h2>Today's Specials</h2>
+    <p>
+      Our specials change daily based on the freshest ingredients available. Don't miss the
+      <a href="#">seasonal truffle pasta</a> or our signature slow-roasted lamb shank.
+    </p>
   </div>
 
 </body>

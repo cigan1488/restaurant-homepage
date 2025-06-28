@@ -1,9 +1,9 @@
-.buttons-group {
+.nav-button {
     display: flex;
     gap: 30px;
 }
 
-.buttons-group button {
+.nav-button button {
     border-style: solid;
     border-radius: 50px;
     border-width: 1px;
@@ -12,11 +12,16 @@
     width: 70px;
     padding: 6px 0;
     color: white;
-    background-color: black;
+    background-color: green;
     transition: background-color 0.3s ease;
 }
+.nav-button .language-button{
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 6px;
+}
 
-.buttons-group button:hover {
+.nav-button button:hover {
     background-color: green;
     cursor: pointer;
 }
@@ -48,12 +53,52 @@
 }
 
 
+.hero-container-buttons {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-button-hero,
+.hero-container-buttons .button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2; /* чтобы текст был поверх фона */
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.reservation-button-hero:hover,
+.hero-container-buttons .button:hover {
+  color: black; /* цвет текста при наведении */
+}
+
+.button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: orange; /* цвет подсветки, можно менять */
+  border-radius: 6px;
+  z-index: 1; /* чтобы фон был под текстом */
+  transition: all 0.3s ease;
+}
+
+
 .arrow {
     display: flex;
     position: relative;
     height: 20px;
     width: 150px;
-    top: 145px;
+    top: 180px;
     gap: 40px;
     right: -40px;
 }

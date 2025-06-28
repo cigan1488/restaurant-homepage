@@ -1,7 +1,5 @@
-.header-left {
+.header-logo {
     display: flex;
-    align-items: center;
-    gap: 30px;
 }
 
 .logo img {
@@ -10,15 +8,21 @@
     display: block;
 }
 
+.header-links{
+    position: relative;
+    display: flex;
+    left: 19%;
+}
+
 .nav-menu {
     display: flex;
     gap: 20px;
 }
 
 .nav-menu a {
+    padding: 25px;
     font-weight: 800;
-    font-size: larger;
-    padding-bottom: 5px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -32,17 +36,37 @@
 }
 
 .nav-underline {
-    position: absolute; /*так и не понял как работать с стилем position */
-    background: green;
-    height: 2px;
-    bottom: 0;
-    transition: 0.5s ease;
+  position: absolute;
+  bottom: 0;              /* прилегает к низу контейнера */
+  height: 3px;            /* управляй толщиной тут */
+  background-color: #2e7d32;  /* цвет полоски */
+  transition: left 0.3s, width 0.3s;
+  left: 0;
+  width: 0;
+  pointer-events: none;
+
 }
 
-.header-right {
+.header-right-button {
+    position: relative;
+    left: 45%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+}
+
+.header-right-button .reservation-button{
+    display: block;
+    border-style: solid;
+    border: 0;
+    border-radius: 7px;
+    border-width: 1px;
+    font-weight: 400;
+    height: 60px;
+    width: 150px;
+    color: black;
+    background-color: orange;
+    text-decoration: none;
 }
 
 .map-link {
