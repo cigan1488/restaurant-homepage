@@ -1,5 +1,15 @@
+/* Основная обертка шапки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Лого */
 .header-logo {
     display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -8,10 +18,13 @@
     display: block;
 }
 
-.header-links{
-    position: relative;
+/* Центральное меню */
+.header-links {
     display: flex;
-    left: 19%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
 }
 
 .nav-menu {
@@ -31,60 +44,38 @@
     transition: color 0.3s ease;
 }
 
+/* Контейнер под черту для анимации */
 .nav-links {
-    position: relative;/*так и не понял как работать с стилем position */
+    position: relative;
 }
 
 .nav-underline {
-  position: absolute;
-  bottom: 0;              /* прилегает к низу контейнера */
-  height: 3px;            /* управляй толщиной тут */
-  background-color: #2e7d32;  /* цвет полоски */
-  transition: left 0.3s, width 0.3s;
-  left: 0;
-  width: 0;
-  pointer-events: none;
-
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #2e7d32;
+    transition: left 0.3s, width 0.3s;
+    left: 0;
+    width: 0;
+    pointer-events: none;
 }
 
+/* Правая часть с кнопкой и картой */
 .header-right-button {
-    position: relative;
-    left: 45%;
     display: flex;
     align-items: center;
     gap: 25px;
+    justify-content: flex-end;
 }
 
-.header-right-button .reservation-button{
+.header-right-button .reservation-button {
     display: block;
-    border-style: solid;
     border: 0;
     border-radius: 7px;
-    border-width: 1px;
     font-weight: 400;
     height: 60px;
     width: 150px;
     color: black;
     background-color: orange;
     text-decoration: none;
-}
-
-.map-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: black;
-}
-
-.map-link:hover {
-    color: green;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.map-icon {
-    width: 32px;
-    height: 32px;
-    fill: currentColor;
-    display: block;
 }

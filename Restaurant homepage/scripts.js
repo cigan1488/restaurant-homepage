@@ -23,7 +23,8 @@ burger.addEventListener('click', () => {
   burger.setAttribute('aria-expanded', !isExpanded);
 });
 
-(function () {
+(function (){
+  if (window.innerWidth <= 767) return;
   const header = document.querySelector('.site-header');
   const navLinks = document.querySelectorAll('.nav-link');
   const underline = document.createElement('div');
@@ -132,6 +133,7 @@ const bg = document.getElementById('buttonBg');
 let active = group.querySelector('.active') || buttons[0];
 
 function moveBackgroundTo(el) {
+  if (window.innerWidth <= 767) return;
   const elRect = el.getBoundingClientRect();
   const groupRect = group.getBoundingClientRect();
   bg.style.width = `${elRect.width}px`;
