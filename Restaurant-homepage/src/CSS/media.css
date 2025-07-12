@@ -1,4 +1,3 @@
-
 @media (max-width: 767px) {
   .site-header {
     margin-left: 0;
@@ -49,12 +48,15 @@
 
   .hero-container-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
   .reservation-button-hero,
-  .hero-container-buttons .button{
+  .hero-container-buttons .button {
     background-color: orange;
-  } 
+    width: 150px;
+    border-radius: 20px;
+  }
 
   .header-right-button {
     position: fixed;
@@ -115,12 +117,21 @@
     min-height: 100vh;
     box-sizing: border-box;
   }
-  
+
   .hero-info {
     padding: 40px;
     max-width: 500px;
     width: 100%;
     text-align: center;
+  }
+
+  .hero-info .hero-greeting {
+    padding-left: 0;
+  }
+
+  .hero-info .hero-greeting::before {
+    left: 70px;
+    top: 13px;
   }
 
   .hero-info h1 {
@@ -139,30 +150,40 @@
     padding: 0;
   }
 
-  .nav-menu a{
+  .nav-menu a {
     font-size: 13px;
     padding: 12px
   }
-  .header-right-button{
+
+  .header-right-button {
     margin-right: 15px;
+    font-size: 13px;
   }
-  .hero-info{
+
+  .header-right-button .reservation-button {
+    height: 50px;
+    width: 110px;
+  }
+
+  .hero-info {
     width: 600px;
     padding-left: 90px;
+    padding-top: 200px;
   }
+
   .hero-info h1 {
     font-size: 55px;
   }
 
-  .arrow{
+  .arrow {
     height: 35px;
-    top: 145px;
+    top: 125px;
     right: -55px;
   }
 
-  .circle{
-      top: 120px;
-      left: -70px;
+  .circle {
+    top: 100px;
+    left: -70px;
   }
 }
 
@@ -171,17 +192,24 @@
     gap: 15px;
     padding: 0;
   }
-  
+
   .logo img {
     height: 70px;
   }
 
-  .nav-menu a{
+  .nav-menu a {
     font-size: 15px;
     padding: 15px
   }
-  .header-right-button{
+
+  .header-right-button {
     margin-right: 15px;
+    font-size: 15px;
+  }
+
+  .header-right-button .reservation-button {
+    height: 40px;
+    width: 130px;
   }
 
   .hero-info {
@@ -195,12 +223,12 @@
 
   .arrow {
     height: 35px;
-    top: 145px;
+    top: 160px;
     right: -100px;
   }
 
   .circle {
-    top: 120px;
+    top: 135px;
     left: -30px;
   }
 }
@@ -210,7 +238,7 @@
     height: 70px;
   }
 
-  .nav-menu a{
+  .nav-menu a {
     padding: 18px
   }
 
@@ -225,30 +253,32 @@
 
   .arrow {
     height: 35px;
-    top: 145px;
+    top: 160px;
     right: -100px;
   }
 
   .circle {
-    top: 120px;
+    top: 135px;
     left: -30px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1284px){
-  .nav-menu a{
+@media (min-width: 1024px) and (max-width: 1284px) {
+  .nav-menu a {
     padding: 22px
   }
-  
-  
+
+
   .hero-info {
     padding-left: 90px;
+    padding-top: 200px;
     width: 680px;
   }
-  
+
   .hero-info h1 {
     font-size: 60px;
-  } 
+  }
+
   .hero-info h1 {
     font-size: 65px;
   }
@@ -256,13 +286,13 @@
   .hero-info .circle {
     display: flex;
     position: relative;
-    top: 93px;
-    left: -80px;
+    top: 60px;
+    left: -70px;
   }
 
   .arrow {
     height: 30px;
-    top: 112px;
+    top: 80px;
     right: -60px;
   }
 }
@@ -270,6 +300,7 @@
 @media (min-width: 1285px) and (max-width: 1439px) {
   .hero-info {
     padding-left: 110px;
+    padding-top: 210px;
     width: 700px;
   }
 
@@ -280,20 +311,66 @@
   .hero-info .circle {
     display: flex;
     position: relative;
-    top: 90px;
+    top: 50px;
     left: -80px;
   }
 
   .arrow {
     height: 30px;
-    top: 110px;
+    top: 70px;
     right: -60px;
   }
 }
 
 @media (min-width: 1440px) {
   .hero-info {
-    padding-left: 200px;
-    padding-top: 250px;
+    padding-left: 170px;
+    padding-top: 190px;
+  }
+  .hero-info h1{
+    font-size: 70px;
+  }
+
+  .hero-info .hero-greeting{
+    margin: 0;
+  }
+  .hero-info .hero-greeting::before{
+    top: 13px;
+  }
+
+  .arrow{
+    height: 40px;
+    top: 110px;
+  }
+
+  .circle{
+    top: 80px;
+  }
+}
+
+@media (min-width: 1920px){
+
+  .hero-info {
+    padding-left: 170px;
+    padding-top: 210px;
+  }
+  .hero-info h1{
+    font-size: 80px;
+  }
+
+  .hero-info .hero-greeting{
+    margin: 0;
+  }
+  .hero-info .hero-greeting::before{
+    top: 13px;
+  }
+
+  .arrow{
+    height: 40px;
+    top: 130px;
+  }
+
+  .circle{
+    top: 100px;
   }
 }

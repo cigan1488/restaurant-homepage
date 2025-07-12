@@ -66,6 +66,7 @@
     align-items: center;
     gap: 25px;
     justify-content: flex-end;
+    transition: transform 0.25s ease;
 }
 
 .header-right-button .reservation-button {
@@ -78,4 +79,24 @@
     color: black;
     background-color: orange;
     text-decoration: none;
+    transition: transform 0.25s ease;
+}
+.header-right-button .reservation-button:hover{
+    color: white;
+}
+
+.language-button {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: color 0.25s ease;
+}
+
+.header-right-button .reservation-button:hover,
+.language-button:hover {
+    transform: scale(1.15);
 }
