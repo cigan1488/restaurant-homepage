@@ -1,178 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лучшие блюда ресторана</title>
+  <title>Gourmet Dish Cards</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col items-center p-6">
+<body class="bg-gray-100 p-10 space-y-10">
 
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Лучшие блюда нашего ресторана</h1>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full">
-    <!-- Карточка 1 -->
-    <div class="bg-white rounded-2xl shadow hover:scale-105 transition-transform overflow-hidden">
-      <img src="https://via.placeholder.com/400x250" alt="Блюдо 1" class="w-full h-48 object-cover">
-      <div class="p-4 flex flex-col h-full">
-        <h2 class="text-xl font-semibold mb-2">Фирменный Стейк</h2>
-        <p class="text-gray-600 mb-4 flex-grow">Сочный мраморный стейк с травами и чесночным соусом.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-lg font-bold">990 ₽</span>
-          <button class="bg-red-500 text-white px-4 py-1 rounded-xl hover:bg-red-600 transition">Заказать</button>
-        </div>
-      </div>
+  <!-- Вариант 1: Минимализм + дорогой стиль -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-lg mx-auto">
+    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-48 object-cover">
+    <div class="p-4 text-center">
+      <h2 class="text-xl font-semibold text-gray-900 mb-2">Truffle Risotto</h2>
+      <p class="text-gray-500 mb-4">Creamy risotto with shaved black truffle and aged parmesan.</p>
+      <button class="mx-auto block w-full max-w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
+        Order Now
+      </button>
     </div>
+  </div>
 
-    <!-- Карточка 2 -->
-    <div class="bg-white rounded-2xl shadow hover:scale-105 transition-transform overflow-hidden">
-      <img src="https://via.placeholder.com/400x250" alt="Блюдо 2" class="w-full h-48 object-cover">
-      <div class="p-4 flex flex-col h-full">
-        <h2 class="text-xl font-semibold mb-2">Паста с Морепродуктами</h2>
-        <p class="text-gray-600 mb-4 flex-grow">Нежная паста с креветками, мидиями и сливочным соусом.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-lg font-bold">790 ₽</span>
-          <button class="bg-red-500 text-white px-4 py-1 rounded-xl hover:bg-red-600 transition">Заказать</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Карточка 3 -->
-    <div class="bg-white rounded-2xl shadow hover:scale-105 transition-transform overflow-hidden">
-      <img src="https://via.placeholder.com/400x250" alt="Блюдо 3" class="w-full h-48 object-cover">
-      <div class="p-4 flex flex-col h-full">
-        <h2 class="text-xl font-semibold mb-2">Тирамису</h2>
-        <p class="text-gray-600 mb-4 flex-grow">Классический итальянский десерт с маскарпоне и кофе.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-lg font-bold">450 ₽</span>
-          <button class="bg-red-500 text-white px-4 py-1 rounded-xl hover:bg-red-600 transition">Заказать</button>
-        </div>
+  <!-- Вариант 2: Темный фон + дорогой акцент -->
+  <div class="bg-neutral-900 text-white rounded-2xl overflow-hidden shadow-xl flex flex-col max-w-lg mx-auto">
+    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Gourmet Dish" class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-xl font-semibold mb-1">Duck Breast & Quenelle</h3>
+      <p class="text-sm text-gray-300 mb-4">Sous-vide duck with foie gras quenelle and wine reduction.</p>
+      <div class="flex justify-center">
+        <button class="w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
+          Reserve
+        </button>
       </div>
     </div>
   </div>
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Кнопки смены языка</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      padding: 50px;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    /* Общие стили кнопок */
-    .lang-button {
-      cursor: pointer;
-      border: none;
-      padding: 8px 14px;
-      font-size: 14px;
-      font-weight: 500;
-      border-radius: 20px;
-      transition: all 0.25s ease;
-    }
-
-    /* Вариант 1: Чёрно-белая */
-    .lang-1 {
-      background-color: #000;
-      color: #fff;
-    }
-
-    .lang-1:hover {
-      background-color: #333;
-    }
-
-    /* Вариант 2: Светлая с обводкой */
-    .lang-2 {
-      background-color: #fff;
-      color: #333;
-      border: 1px solid #ccc;
-    }
-
-    .lang-2:hover {
-      border-color: #888;
-      color: #000;
-    }
-
-    /* Вариант 3: Плоская с флагом */
-    .lang-3 {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background-color: #0066cc;
-      color: white;
-      border-radius: 50px;
-      padding: 6px 12px;
-    }
-
-    .lang-3 img {
-      width: 20px;
-      height: 14px;
-      object-fit: cover;
-      border-radius: 2px;
-    }
-
-    .lang-3:hover {
-      background-color: #004999;
-    }
-
-    /* Вариант 4: Иконка + выпадающее меню (демо) */
-    .lang-4 {
-      position: relative;
-    }
-
-    .lang-4 button {
-      background-color: transparent;
-      border: none;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    .lang-4 select {
-      margin-top: 6px;
-      padding: 6px;
-      border-radius: 6px;
-    }
-  </style>
-</head>
-<body>
-
-  <h2>Вариант 1: Чёрно-белая</h2>
-  <button class="lang-button lang-1">RU</button>
-
-  <h2>Вариант 2: Светлая с рамкой</h2>
-  <button class="lang-button lang-2">EN</button>
-
-  <h2>Вариант 3: Кнопка с флагом</h2>
-  <button class="lang-button lang-3">
-    <img src="https://flagcdn.com/w20/gb.png" alt="EN">
-    EN
-  </button>
-
-  <h2>Вариант 4: Выпадающий список</h2>
-  <div class="lang-4">
-    <button>🌐 Язык</button>
-    <select>
-      <option>RU</option>
-      <option>EN</option>
-      <option>FR</option>
-    </select>
+  <!-- Вариант 3: Градиент и мягкая тень -->
+  <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col max-w-lg mx-auto">
+    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-52 object-cover">
+    <div class="p-5 text-center">
+      <h2 class="text-xl font-bold text-gray-800 mb-1">Lobster & Herb Butter</h2>
+      <p class="text-gray-500 text-sm mb-4">Poached lobster with tarragon butter and sea salt flakes.</p>
+      <button class="mx-auto w-[150px] h-[60px] rounded-md bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-normal transition-transform duration-200 ease-in-out">
+        View Dish
+      </button>
+    </div>
   </div>
 
-</body>
-</html>
-
-  
+  <!-- Вариант 4: Минимал + рамка -->
+  <div class="border border-gray-200 rounded-xl overflow-hidden flex flex-col shadow-sm max-w-lg mx-auto">
+    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-48 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Beef Wellington</h3>
+      <p class="text-gray-500 mb-4">Prime beef fillet wrapped in mushroom duxelles and puff pastry.</p>
+      <button class="mx-auto block w-full max-w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
+        Order Now
+      </button>
+    </div>
+  </div>
 
 </body>
 </html>
