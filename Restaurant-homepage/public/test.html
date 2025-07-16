@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Gourmet Dish Cards</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню ресторана</title>
+  <!-- Подключение Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 p-10 space-y-10">
+<body class="bg-gray-100">
 
-  <!-- Вариант 1: Минимализм + дорогой стиль -->
-  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-lg mx-auto">
-    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-48 object-cover">
-    <div class="p-4 text-center">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2">Truffle Risotto</h2>
-      <p class="text-gray-500 mb-4">Creamy risotto with shaved black truffle and aged parmesan.</p>
-      <button class="mx-auto block w-full max-w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
-        Order Now
-      </button>
-    </div>
-  </div>
+  <main class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-10">Меню нашего ресторана</h1>
 
-  <!-- Вариант 2: Темный фон + дорогой акцент -->
-  <div class="bg-neutral-900 text-white rounded-2xl overflow-hidden shadow-xl flex flex-col max-w-lg mx-auto">
-    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Gourmet Dish" class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-xl font-semibold mb-1">Duck Breast & Quenelle</h3>
-      <p class="text-sm text-gray-300 mb-4">Sous-vide duck with foie gras quenelle and wine reduction.</p>
-      <div class="flex justify-center">
-        <button class="w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
-          Reserve
-        </button>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Карточка 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1604908554168-6f3be88940ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Паста Болоньезе" 
+             class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Паста Болоньезе</h3>
+          <p class="text-gray-600 text-sm">Традиционная паста с мясным соусом, томатами и пармезаном.</p>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Бургер" 
+             class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Чизбургер XXL</h3>
+          <p class="text-gray-600 text-sm">Говяжья котлета, чеддер, бекон, соус BBQ и свежие овощи.</p>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Салат с курицей" 
+             class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Салат с курицей</h3>
+          <p class="text-gray-600 text-sm">Лёгкий салат с куриной грудкой, листьями салата и цитрусовой заправкой.</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Вариант 3: Градиент и мягкая тень -->
-  <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col max-w-lg mx-auto">
-    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-52 object-cover">
-    <div class="p-5 text-center">
-      <h2 class="text-xl font-bold text-gray-800 mb-1">Lobster & Herb Butter</h2>
-      <p class="text-gray-500 text-sm mb-4">Poached lobster with tarragon butter and sea salt flakes.</p>
-      <button class="mx-auto w-[150px] h-[60px] rounded-md bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-normal transition-transform duration-200 ease-in-out">
-        View Dish
-      </button>
-    </div>
-  </div>
-
-  <!-- Вариант 4: Минимал + рамка -->
-  <div class="border border-gray-200 rounded-xl overflow-hidden flex flex-col shadow-sm max-w-lg mx-auto">
-    <img src="https://via.placeholder.com/600x200?text=Dish+Image" alt="Elegant Dish" class="w-full h-48 object-cover">
-    <div class="p-4 text-center">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">Beef Wellington</h3>
-      <p class="text-gray-500 mb-4">Prime beef fillet wrapped in mushroom duxelles and puff pastry.</p>
-      <button class="mx-auto block w-full max-w-[150px] h-[60px] bg-orange-500 text-black font-normal rounded-md transition-transform duration-200 ease-in-out">
-        Order Now
-      </button>
-    </div>
-  </div>
+  </main>
 
 </body>
 </html>

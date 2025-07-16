@@ -132,6 +132,7 @@
   .hero-info .hero-greeting::before {
     left: 70px;
     top: 13px;
+    display: none;
   }
 
   .hero-info h1 {
