@@ -2,58 +2,143 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Меню ресторана</title>
-  <!-- Подключение Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Ресторан «Ваше имя»</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .contact-info, .socials, .contact-form, .map {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-info a {
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      resize: vertical;
+    }
+    .contact-form button {
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background-color: #1f5a88;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    .socials img {
+      width: 32px;
+      height: 32px;
+      filter: grayscale(0.3);
+      transition: filter 0.3s ease;
+    }
+    .socials a:hover img {
+      filter: grayscale(0);
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
-<body class="bg-gray-100">
+<body>
+  <div class="container">
+    <h1>Контакты</h1>
 
-  <main class="max-w-6xl mx-auto p-6">
-    <h1 class="text-3xl font-bold text-center mb-10">Меню нашего ресторана</h1>
+    <section class="contact-info">
+      <h2>Наш адрес и контакты</h2>
+      <p><strong>Адрес:</strong> ул. Примерная, 25, Москва, 123456</p>
+      <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+      <p><strong>Электронная почта:</strong> <a href="mailto:info@restaurant.ru">info@restaurant.ru</a></p>
+      <p><strong>Часы работы:</strong> Пн–Вс: 10:00 — 23:00</p>
+      <p><strong>Парковка:</strong> Бесплатная парковка возле входа</p>
+    </section>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Карточка 1 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-        <img src="https://images.unsplash.com/photo-1604908554168-6f3be88940ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-             alt="Паста Болоньезе" 
-             class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Паста Болоньезе</h3>
-          <p class="text-gray-600 text-sm">Традиционная паста с мясным соусом, томатами и пармезаном.</p>
-        </div>
-      </div>
+    <section class="map" aria-label="Карта расположения ресторана">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.184449014785!2d37.61842331602271!3d55.751244880552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab7b32e0b9999%3A0xe8f3f064f8c8b273!2z0JHQtdC70LDRgNC-0YHRjNC60LjQuSDQvtCx0LsuLCAxLCDQnNC-0YHQutCy0LAsIDEyMzQ1Ng!5e0!3m2!1sru!2sru!4v1689888888888!5m2!1sru!2sru"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Карта ресторана"
+      ></iframe>
+    </section>
 
-      <!-- Карточка 2 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-             alt="Бургер" 
-             class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Чизбургер XXL</h3>
-          <p class="text-gray-600 text-sm">Говяжья котлета, чеддер, бекон, соус BBQ и свежие овощи.</p>
-        </div>
-      </div>
+    <section class="contact-form" aria-label="Форма обратной связи">
+      <h2>Свяжитесь с нами</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="email" name="email" placeholder="Ваш email" required />
+        <textarea name="message" rows="5" placeholder="Ваше сообщение"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
-      <!-- Карточка 3 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-             alt="Салат с курицей" 
-             class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Салат с курицей</h3>
-          <p class="text-gray-600 text-sm">Лёгкий салат с куриной грудкой, листьями салата и цитрусовой заправкой.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-
+    <section class="socials" aria-label="Социальные сети ресторана">
+      <h2>Мы в соцсетях</h2>
+      <a href="https://instagram.com/yourrestaurant" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+      </a>
+      <a href="https://t.me/yourrestaurant" target="_blank" rel="noopener" aria-label="Telegram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+      </a>
+      <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+    </section>
+  </div>
 </body>
 </html>

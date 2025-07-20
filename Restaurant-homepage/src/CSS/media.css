@@ -79,6 +79,10 @@
     margin-left: 10px;
   }
 
+  .header-right-button .signin-button{
+    padding: 5px 16px;
+  }
+
   .header-right-button::before {
     content: "";
     position: absolute;
@@ -224,12 +228,12 @@
 
   .arrow {
     height: 35px;
-    top: 160px;
+    top: 80px;
     right: -100px;
   }
 
   .circle {
-    top: 135px;
+    top: 55px;
     left: -30px;
   }
 }
@@ -254,12 +258,12 @@
 
   .arrow {
     height: 35px;
-    top: 160px;
+    top: 80px;
     right: -100px;
   }
 
   .circle {
-    top: 135px;
+    top: 55px;
     left: -30px;
   }
 }
