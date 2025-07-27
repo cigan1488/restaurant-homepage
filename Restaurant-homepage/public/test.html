@@ -1,144 +1,162 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Контакты — Ресторан «Ваше имя»</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.5;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    .contact-info, .socials, .contact-form, .map {
-      background: #fff;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .contact-info p {
-      margin: 8px 0;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-info a {
-      font-weight: bold;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-      resize: vertical;
-    }
-    .contact-form button {
-      background-color: #2980b9;
-      color: #fff;
-      border: none;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 100%;
-    }
-    .contact-form button:hover {
-      background-color: #1f5a88;
-    }
-    .socials a {
-      display: inline-block;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
-    .socials img {
-      width: 32px;
-      height: 32px;
-      filter: grayscale(0.3);
-      transition: filter 0.3s ease;
-    }
-    .socials a:hover img {
-      filter: grayscale(0);
-    }
-    .map iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 8px;
-    }
-    @media (max-width: 600px) {
-      .container {
-        margin: 10px;
-        padding: 0 10px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Контакты</h1>
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 space-y-24">
 
-    <section class="contact-info">
-      <h2>Наш адрес и контакты</h2>
-      <p><strong>Адрес:</strong> ул. Примерная, 25, Москва, 123456</p>
-      <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-      <p><strong>Электронная почта:</strong> <a href="mailto:info@restaurant.ru">info@restaurant.ru</a></p>
-      <p><strong>Часы работы:</strong> Пн–Вс: 10:00 — 23:00</p>
-      <p><strong>Парковка:</strong> Бесплатная парковка возле входа</p>
-    </section>
+    <!-- Вариант 1: Минималистичная галерея (3 чел., круги) -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Our Team</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <!-- повтор три раза -->
+        <div class="flex flex-col items-center">
+          <img src="chef1.jpg" alt="" class="w-32 h-32 rounded-full object-cover">
+          <h3 class="mt-4 font-semibold">Name</h3>
+          <p class="text-sm text-gray-600">Position</p>
+        </div>
+      </div>
+    </div>
 
-    <section class="map" aria-label="Карта расположения ресторана">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.184449014785!2d37.61842331602271!3d55.751244880552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab7b32e0b9999%3A0xe8f3f064f8c8b273!2z0JHQtdC70LDRgNC-0YHRjNC60LjQuSDQvtCx0LsuLCAxLCDQnNC-0YHQutCy0LAsIDEyMzQ1Ng!5e0!3m2!1sru!2sru!4v1689888888888!5m2!1sru!2sru"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Карта ресторана"
-      ></iframe>
-    </section>
+    <!-- Вариант 2: Hover-карточки с соцсетями -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Meet the Chefs</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="relative group">
+          <img src="chef2.jpg" alt="" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+            <div class="flex flex-col items-center justify-center h-full text-white p-4 space-y-2">
+              <p>Short bio or quote...</p>
+              <div class="flex space-x-3">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="LinkedIn">🔗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section class="contact-form" aria-label="Форма обратной связи">
-      <h2>Свяжитесь с нами</h2>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Ваше имя" required />
-        <input type="email" name="email" placeholder="Ваш email" required />
-        <textarea name="message" rows="5" placeholder="Ваше сообщение"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
+    <!-- Вариант 3: Большие портреты с цитатами -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Meet Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+          <img src="chef3.jpg" alt="" class="w-48 h-48 rounded-full object-cover mb-6">
+          <h3 class="text-xl font-medium">Name</h3>
+          <p class="text-sm text-gray-500">Position</p>
+          <blockquote class="mt-4 italic text-gray-700">"Motivational quote or message."</blockquote>
+        </div>
+      </div>
+    </div>
 
-    <section class="socials" aria-label="Социальные сети ресторана">
-      <h2>Мы в соцсетях</h2>
-      <a href="https://instagram.com/yourrestaurant" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
-      </a>
-      <a href="https://t.me/yourrestaurant" target="_blank" rel="noopener" aria-label="Telegram">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
-      </a>
-      <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-      </a>
-    </section>
+    <!-- Вариант 4: Слайдер-карусель -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Our Team Carousel</h2>
+      <!-- предположим, вы подключите слайдер JS -->
+      <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory">
+        <div class="snap-center flex-shrink-0 w-64 p-4 bg-white rounded-lg shadow">
+          <img src="chef4.jpg" alt="" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-lg font-semibold">Name</h3>
+          <p class="text-sm text-gray-600">Position</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 5: Коллаж с разной формой фото -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">The Crew</h2>
+      <div class="grid grid-cols-4 grid-rows-2 gap-4">
+        <img src="chef5.jpg" alt="" class="row-span-2 rounded-lg object-cover">
+        <img src="chef6.jpg" alt="" class="rounded-full w-full h-full object-cover">
+        <img src="chef7.jpg" alt="" class="rounded-lg object-cover">
+        <img src="chef8.jpg" alt="" class="rounded-full object-cover">
+      </div>
+    </div>
+
+    <!-- Вариант 6: Story Cards -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Team Stories</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <img src="chef9.jpg" alt="" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Name</h3>
+          <p class="text-sm text-gray-500">Position</p>
+          <p class="mt-2 text-gray-700">Short paragraph about person...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 7: Круг и рамка + соцсети -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">The Team</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full border-4 border-orange-400 overflow-hidden">
+            <img src="chef10.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <h3 class="mt-4 text-lg font-medium">Name</h3>
+          <p class="text-sm text-gray-500">Role</p>
+          <div class="flex space-x-3 mt-2">
+            <a href="#">IG</a><a href="#">TW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 8: Вертикальный список -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Team Profiles</h2>
+      <div class="space-y-8">
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img src="chef11.jpg" alt="" class="w-48 h-48 rounded-lg object-cover mb-4 md:mb-0">
+          <div>
+            <h3 class="text-xl font-semibold">Name</h3>
+            <p class="text-sm text-gray-500 mb-2">Position</p>
+            <p class="text-gray-700">A longer bio paragraph about person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 9: Акцент на главном -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Our Star Chef</h2>
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <img src="chef12.jpg" alt="" class="w-full lg:w-1/3 h-auto object-cover rounded-lg shadow-lg">
+        <div class="grid grid-cols-2 gap-8">
+          <!-- две мелкие карточки остальных -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 10: Фото фон + карточки потолще -->
+    <div class="relative bg-cover bg-center" style="background-image:url('kitchen-bg.jpg')">
+      <div class="bg-white bg-opacity-80 p-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- карточки на полупрозрачном фоне -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 11: Цитаты поверх фото -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Words from the Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="relative">
+          <img src="chef13.jpg" alt="" class="w-full h-64 object-cover rounded-lg">
+          <blockquote class="absolute bottom-4 left-4 right-4 bg-black bg-opacity-50 text-white p-4 rounded">"Quote…" &mdash; Name</blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вариант 12: Team + карта (вторая часть) -->
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8">Our Team & Location</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="grid grid-cols-2 gap-4">
+          <!-- карточки -->
+        </div>
+        <div><!-- embed map iframe --></div>
+      </div>
+    </div>
+
   </div>
-</body>
-</html>
+</section>
