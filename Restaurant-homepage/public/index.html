@@ -138,11 +138,13 @@
                 OUR BEST FOOD
             </h3>
             <!-- Grid карточек -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-14 w-full items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 w-full items-stretch">
                 <!-- Карточка -->
-                <div
+                <article
                     class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 h-full">
-                    <img class="w-full object-cover" src="../src/img/food-card1.jpg" alt="">
+                    <div class="relative w-full h-96 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="../src/img/food-card1.jpg" alt="">
+                    </div>
 
                     <h4 class="text-2xl font-bold text-center p-1.5">Quenelle — Dessert or Tartare</h4>
 
@@ -152,17 +154,19 @@
                     </p>
 
                     <div class="mt-auto flex justify-center m-4">
-                        <button
-                            class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
+                        <a href=""
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal text-center h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
                             View More
-                        </button>
+                        </a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Карточка -->
-                <div
+                <article
                     class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 h-full">
-                    <img class="w-full object-cover" src="../src/img/food-card2.jpg" alt="">
+                    <div class="relative w-full h-96 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="../src/img/food-card2.jpg" alt="">
+                    </div>
 
                     <h4 class="text-2xl font-bold text-center p-1.5">Mini Crescent Croissant</h4>
 
@@ -172,17 +176,19 @@
                     </p>
 
                     <div class="mt-auto flex justify-center m-4">
-                        <button
-                            class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
+                        <a href="menu.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal text-center h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
                             View More
-                        </button>
+                        </a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Карточка -->
-                <div
+                <article
                     class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 h-full">
-                    <img class="w-full object-cover" src="../src/img/food-card3.jpg" alt="">
+                    <div class="relative w-full h-96 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="../src/img/food-card3.jpg" alt="">
+                    </div>
 
                     <h4 class="text-2xl font-bold text-center p-1.5">Filet Mignon with Truffle</h4>
 
@@ -192,18 +198,18 @@
                     </p>
 
                     <div class="mt-auto flex justify-center m-4">
-                        <button
-                            class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
+                        <a href="menu.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal text-center h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110 bg-orange-400 no-underline ease-linear">
                             View More
-                        </button>
+                        </a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
         <!-- about container -->
         <!-- о нас секция -->
-        <section class="my-0 md:my-30 mx-auto px-4 w-full">
+        <section class="my-0 md:my-30 mx-auto px-4 w-full bg-gradient-to-r bg-[#f5e7d8]">
             <!--flex container -->
             <div class="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-10">
                 <!--Text-->
@@ -219,10 +225,10 @@
                         every guest is important to us. We look forward to welcoming you among our visitors.
                     </p>
                     <div class="mt-auto flex justify-center xl:justify-start">
-                        <button
-                            class="mt-4 block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
+                        <a href="aboutus.html "
+                            class="mt-4 flex items-center justify-center cursor-pointer border-0 rounded-md font-normal text-center h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
                             Read More
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <!--Images-->
@@ -231,101 +237,169 @@
                     <!--Left picture below-->
                     <!-- Левая картинка ниже -->
                     <div class="mt-30">
-                        <img src="../src/img/Без названия (1).jpg" alt=""
+                        <img src="../src/img/our-story-photo1.jpg" alt=""
                             class="hidden sm:block w-full md:w-60 h-80 object-cover shadow-xl">
                     </div>
                     <!--Right picture above-->
                     <!-- Правая картинка выше  -->
                     <div>
-                        <img src="../src/img/Без названия (2).jpg" alt=""
+                        <img src="../src/img/our-story-photo2.jpg" alt=""
                             class="w-full md:w-60 h-80 object-cover shadow-xl">
                     </div>
                 </div>
             </div>
         </section>
         <section class="my-30 mx-auto px-4 max-w-7xl">
-            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-lora text-center font-bold mb-16">MEET THE TEAM</h3>
-            <!--chef card-->
-            <div class="flex flex-col items-center justify-center" >
+            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-lora text-center font-bold mb-16">MEET THE TEAM
+            </h3>
+            <!--chief card-->
+            <div class="flex flex-col items-center justify-center">
                 <h4 class="text-center font-bold font-lora text-4xl m-4">Chief</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/шеф.jpg" alt="">
+                <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                    <img class="w-full h-full object-cover" src="../src/img/chief.jpg" alt="Robert Howard">
+                </div>
                 <p class="font-bold font-roboto text-center text-2xl m-2">David Velazco</p>
                 <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
+                    <a href="aboutus.html"
+                        class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
                         FULL BIO
-                    </button>
+                    </a>
                 </div>
             </div>
             <!--grid-->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 w-full items-stretch">
                 <!--menedger-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Manager</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/менеджер.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">Vivian Carter</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Manager</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/manager.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">Vivian Carter</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+
+                    </div>
                 </div>
-            </div>
                 <!--barmen-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Barman</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/бармен.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">David Lee</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Barman</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/barman.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">David Lee</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+                    </div>
                 </div>
-            </div>
                 <!--offic-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Head Waiter</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/pexels-kenzhar-sharap-125323072-29129767.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">Freya Harper</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Head Waiter</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/head-waiter.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">Freya Harper</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+                    </div>
                 </div>
-            </div>
                 <!--povar1-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/повар1.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">Jennifer Raines</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/cook1.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">Jennifer Raines</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+
+                    </div>
                 </div>
-            </div>
                 <!--povar2-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/повар2.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">Robert Howard</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/cook2.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">Robert Howard</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+
+                    </div>
                 </div>
-            </div>
                 <!--povar3-->
-                <div class="flex flex-col items-center justify-center" >
-                <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
-                <img class="w-full md:w-80 h-100 object-cover rounded-2xl shadow-xl" src="../src/img/повар3.jpg" alt="">
-                <p class="font-bold font-roboto text-center text-2xl m-2">Kevin Zimmer</p>
-                <div class="mt-auto flex justify-center mb-4">
-                    <button class="block cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black hover:text-white transform transition-transform duration-200 hover:scale-110  bg-orange-400 no-underline ease-linear">
-                        FULL BIO
-                    </button>
+                <div class="flex flex-col items-center justify-center">
+                    <h4 class="text-center font-bold font-lora text-4xl m-4">Cook</h4>
+                    <div class="w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-xl">
+                        <img class="w-full h-full object-cover" src="../src/img/cook3.jpg" alt="Robert Howard">
+                    </div>
+                    <p class="font-bold font-roboto text-center text-2xl m-2">Kevin Zimmer</p>
+                    <div class="mt-auto flex justify-center mb-4">
+                        <a href="aboutus.html"
+                            class="flex items-center justify-center cursor-pointer border-0 rounded-md font-normal h-12 w-36 text-black bg-orange-400 no-underline transform transition-all duration-200 ease-linear hover:text-white hover:scale-110">
+                            FULL BIO
+                        </a>
+
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
+        <footer class="bg-[#f5e7d8] py-10 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Навигация -->
+                <nav class="flex flex-col space-y-3 text-sm md:text-base">
+                    <a href="/menu.html" class="hover:text-orange-500 transition">MENU</a>
+                    <a href="/aboutus.html" class="hover:text-orange-500 transition">ABOUT</a>
+                    <a href="/contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+                </nav>
+
+                <!-- Контакты -->
+                <div class="text-sm md:text-base space-y-2">
+                    <p>Address: Taitajankatu 4-6, 24240 Salo</p>
+                    <p>Phone: 0469524662</p>
+                    <p>Email: nikdenpro@gmail.com</p>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="flex flex-col space-y-3">
+                    <a href="https://www.instagram.com/general_chipchilinys347/?next=%2F" target="_blank"
+                        rel="noopener noreferrer" class="flex items-center gap-2 hover:text-orange-500 transition">
+                        <img src="../src/img/instagram-svg.svg" alt="Instagram" class="w-6 h-6" />
+                        <span>@general_chipchilinys347</span>
+                    </a>
+                    <a href="https://www.instagram.com/general_chipchilinys347/?next=%2F" target="_blank"
+                        rel="noopener noreferrer" class="flex items-center gap-2 hover:text-orange-500 transition">
+                        <img src="../src/img/facebook-svg.svg" alt="Facebook" class="w-6 h-6" />
+                        <span>/general_chipchilinys347</span>
+                    </a>
+                    <a href="https://www.instagram.com/general_chipchilinys347/?next=%2F" target="_blank"
+                        rel="noopener noreferrer" class=" flex items-center gap-2 hover:text-orange-500 transition">
+                        <img src="../src/img/twitter-svg.svg" alt="Twitter" class="w-6 h-6" />
+                        <span>@general_chipchilinys347</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mt-8 text-center text-sm text-gray-500">
+                © 2025 Restaurant "Kitchen Delicious". All rights reserved.
+            </div>
+        </footer>
+
     </main>
     <!-- js connection -->
     <!-- Подключение js-->
