@@ -1,4 +1,4 @@
-const overlay = document.getElementById('overlay');
+
 const menu = document.getElementById('menu');
 const burger = document.getElementById('burger');
 const navright = document.getElementById("header-right");
@@ -8,17 +8,13 @@ const arrowrightBtn = document.querySelector('.arrow-right');
 const arrowleftBtn = document.querySelector('.arrow-left');
 
 
-overlay.addEventListener('click', () => {
-  menu.classList.remove('menu--active');
-  navright.classList.remove("header--active");
-  overlay.classList.remove('active');
-  burger.setAttribute('aria-expanded',"false");
-});
+
 
 burger.addEventListener('click', () => {
   menu.classList.toggle('menu--active');
   navright.classList.toggle("header--active");
-  overlay.classList.toggle('active');
+  burger.classList.toggle('burger--active');
+
   const isExpanded = burger.getAttribute('aria-expanded') === 'true';
   burger.setAttribute('aria-expanded', !isExpanded);
 });
