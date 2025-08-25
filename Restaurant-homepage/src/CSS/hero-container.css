@@ -88,7 +88,6 @@
 .circle svg {
     height: 20px;
     width: 15px;
-    cursor: pointer;
     stroke: white;
     transition: stroke 1s ease;
 }
