@@ -77,6 +77,6 @@ restaurant-homepage/
 
 Author: Nikita Prokopenko
 
-GitHub: cigan1488
+GitHub: Nikita Prokopenko
 
 Email: nikdenpro@gmail.com
